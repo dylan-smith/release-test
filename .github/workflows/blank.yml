@@ -18,4 +18,4 @@ jobs:
         run: echo Hello, world!
         
       - name: Show event
-        run: echo ${{ github.event }}
+        run: echo ${{ toJSON(github.event) }}
